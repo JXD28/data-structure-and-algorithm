@@ -4,7 +4,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/list/05树.js",
+            "program": "${workspaceFolder}/list/07图.js",
             "skipFiles": ["<node_internals>/**"]
         }
     ]
