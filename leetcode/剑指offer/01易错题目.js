@@ -86,3 +86,16 @@ var buildTree = function (preorder, inorder) {
 const preorder = [3, 9, 20, 15, 7];
 const inorder = [9, 3, 15, 20, 7];
 buildTree(preorder, inorder);
+
+//---------------队列--------------------
+//01 队列的最大值
+
+// 最大值的实现需要考虑,删除最大值之后,整个队列的最大值是谁
+// 方法:最大值双端队列->头部保存最大值,剩余保存后添加进来的数据的最大值.
+MaxQueue.prototype.push_back = function (value) {
+    this.stack.push(value);
+    while (this.max.length && this.max[this.max.length - 1] < value) {
+        this.max.pop();
+    }
+    this.max.push(value);
+};
