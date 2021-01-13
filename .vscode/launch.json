@@ -4,7 +4,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/leetcode/剑指offer/01易错题目.js",
+            "program": "${workspaceFolder}/排序/01快速排序.js",
             "skipFiles": ["<node_internals>/**"]
         }
     ]
