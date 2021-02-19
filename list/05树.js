@@ -76,7 +76,6 @@ class BinarySearchTree {
         if (root === null) {
             return;
         }
-
         this.postOrderTraverseNode(root.left, handle);
         this.postOrderTraverseNode(root.right, handle);
         handle(root.data);
